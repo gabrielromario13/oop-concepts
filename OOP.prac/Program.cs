@@ -33,9 +33,9 @@ horse.Gallop();
 // Hierarchical inheritance
 var eagle = new Eagle();
 var penguin = new Penguin();
-eagle.Fly();
+Bird.Fly();
 eagle.Hunt();
-penguin.Fly();
+Bird.Fly();
 penguin.Swim();
 
 // Multiple inheritance using interfaces

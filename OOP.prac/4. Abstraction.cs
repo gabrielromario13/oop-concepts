@@ -1,12 +1,12 @@
 namespace OOP.prac;
 
 // 4.1 Using Abstract Classes
-abstract class Shape
+internal abstract class Shape
 {
     public abstract int Area();
 }
 
-class Square(int x = 0) : Shape
+internal class Square(int x = 0) : Shape
 {
     private int _side = x;
 
@@ -25,8 +25,5 @@ public interface IStudent
 
 public class Geeky : IStudent
 {
-    public void FavSubject()
-    {
-        Console.WriteLine("My favorite subject is C#");
-    }
+    public void FavSubject() => Console.WriteLine("My favorite subject is C#");
 }
